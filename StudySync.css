@@ -252,6 +252,7 @@ a{
     }
 }
 .heroFooter{
+    height: 100%;
     margin-top: 40px;
     margin-bottom: 50px;
     animation: fromLeftToRight 350ms linear 100ms forwards;
@@ -279,23 +280,39 @@ a{
     background-color: var(--light-gray);
 
 }
-@media screen and (max-width:779px){
-    .heroFooterBox{
-        width: 100vw;
-    }
-}
+
 .heroFooterTitle{
     font-size: 1.6rem;
     font-weight: 700;
 }
 .heroFooterItem{
     display: flex;
+    justify-content: center;
     align-items: center;
     
 }
 .heroFooterImage{
     margin-right: 5px;
     width: 1.3rem;
+}
+@media screen and (max-width:550px){
+    .heroFooterBox{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        height: 100%;
+        width: 100vw;
+        padding: 20px 30px;
+    }
+    .heroFooterItem{
+        margin: 10px 0px;
+    }
+    #linkedInHero{
+        padding-left: 10px;
+    }
+    #vectorEduHero{
+        padding-left: 6px;
+    }
 }
 
 /**CardContainer*/
