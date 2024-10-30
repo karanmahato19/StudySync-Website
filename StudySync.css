@@ -273,8 +273,7 @@ a{
     width: 40rem;
     margin-top: 10px;
     padding: 0 30px;
-    display: grid;
-    grid-templete-columns: repeat(4, 1fr);
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--light-gray);
@@ -283,7 +282,6 @@ a{
 @media screen and (max-width:779px){
     .heroFooterBox{
         width: 100vw;
-        grid-templete-columns: repeat(2, 1fr);
     }
 }
 .heroFooterTitle{
